@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'style.css')}}">
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'home.css')}}">
+    <link rel = "stylesheet" href = "../static/css/style.css">
+    <link rel = "stylesheet" href = "../static/css/home.css">
+    <title>Welcome - Dr00ger</title>
+</head>
+<body>
+    <div class="mainBox">
+        <ul class="navbar">
+            <a href = "/index"><li class="navItems">Home</li></a>
+            <a href = "/login"><li class="navItems">Login</li></a>
+            <a href = "/register"><li class="navItems">Register</li></a>
+            <a href = "/dashboard"><li class="navItems">Dashboard</li></a>
+        </ul>
+        <div id = "shape"></div>
+        <div class="parentBox">
+            <div class="childBox">
+                <div class="textBox">
+                    <h1>Dr00ger - Welcome Back</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo autem optio. Assumenda architecto recusandae voluptate in ducimus ullam magnam iste animi error nobis. Adipisci quaerat totam perspiciatis repudiandae quo!</p>
+                    <button>UPLOAD</button>
+                </div>
+            </div>
+            <div class="childBox">
+                <img src = "https://seeklogo.com/images/B/bored-ape-nft-logo-F2AC2D3E4D-seeklogo.com.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

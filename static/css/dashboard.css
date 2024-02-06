@@ -1,0 +1,176 @@
+.parentBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.childBox {
+    width: 50%;
+    height: 100%;
+}
+
+.childBox:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childBox:nth-child(2) {
+}
+
+.userBox {
+    width: 50%;
+    height: 60%;
+    background: var(--boxColor);
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    place-items: center;
+    margin: -15% 0;
+    margin-bottom: 1%;
+}
+
+.avatar > img {
+    width: 25%;
+    height: 100%;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px solid var(--orangeC);
+}
+
+.usernameBox {
+    width: 100%;
+    height: 10%;
+    padding: 5% 0;
+}
+
+.userInfo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15% 0;
+    font-size: 1rem;
+    font-family: arial;
+}
+
+.iconsText {
+    width: 50%;
+    height: 100%;
+    list-style-type: none;
+    color: var(--textColor);
+    margin: 0 0 0 20%;
+}
+
+.iconsText > li {
+    margin-bottom: 7%;
+}
+
+.infoText {
+    width: 50%;
+    height: 100%;
+    list-style-type: none;
+    color: var(--orangeC);
+    font-weight: bold;
+}
+
+.infoText > li {
+    margin-bottom: 7%;
+}
+
+#owner {
+    color: red;
+}
+
+#user {
+    color: rgb(72, 255, 72);
+}
+
+b {
+    color: var(--textColor);   
+}
+
+#userColor {
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--textColor);
+    font-family: arial;
+    text-align: center;
+}
+
+#bgDesign {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 30%;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-end-end-radius: 40px;
+    border-end-start-radius: 40px;
+}
+
+.childBox:nth-child(2) {
+    display: grid;
+    place-items: center;
+}
+
+.uploadForm {
+    width: 80%;
+    height: 60%;
+    background: var(--boxColor);
+    padding: 3%;
+}
+
+.uploadForm > input[type = text] {
+    width: 40%;
+    height: 7%;
+    margin-bottom: 3%;
+    outline: none;
+    padding: 3%;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    color: white;
+}
+
+.uploadForm > input[type = submit] {
+    width: 40%;
+    height: 9%;
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.786), rgba(241, 92, 92, 0.989));
+    font-weight: bold;
+    color: var(--textColor);
+    margin: auto;
+    display: block;
+}
+.uploadForm > input[type = submit]:hover {
+    border-radius: 8px;
+    border: 1px solid salmon;
+    box-shadow: 0 0 10px 1px salmon;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgba(255, 105, 105, 0.989));
+    transition: all ease-in 0.3s;
+}
+
+textarea {
+    width: 100%;
+    height: 60%;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    outline: none;
+    resize: none;
+    color: white;
+    padding: 3%;
+    margin-bottom: 7%;
+}
+
+input[type = file] {
+    width: 20%;
+    height: 20%;
+    background: red;
+}

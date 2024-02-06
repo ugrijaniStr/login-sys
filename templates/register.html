@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'register.css')}}">
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'style.css')}}">
+    <title>Dr00ger - Register System</title>
+</head>
+<body>
+    <div class="mainBox">
+        <ul class="navbar">
+            <a href = "/index"><li class="navItems">Home</li></a>
+            <a href = "/login"><li class="navItems">Login</li></a>
+            <a href = "/register"><li class="navItems">Register</li></a>
+            <a href = "/dashboard"><li class="navItems">Dashboard</li></a>
+        </ul>
+        <div class="centerBox">
+            <form class = "loginBox" action = "/register_sys" method = 'POST'>
+                <h1>Register System</h1>
+                <input placeholder = "E-Mail" name = "email" type = "email" required>
+                <input placeholder = "Username" name = "username" type = "text" required>
+                <input placeholder = "Password" name = "password" type = "password" required>
+                <input type = "submit">
+                <p id = "error">{{error}}</p>
+                <p id = "success">{{success}}</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

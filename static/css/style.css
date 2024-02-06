@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --boxColor: rgb(24, 24, 24);
+    --bgColor: rgb(33,32,32);
+    --textColor: rgb(211, 211, 211);
+    --orangeC: rgb(255, 83, 3);
+    --orangeCH: rgb(255, 55, 0);
+}
+
+body {
+    background: var(--bgColor);
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5%;
+    list-style-type: none;
+    background: var(--boxColor);
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(0.20turn, rgba(255,249,34), rgba(255,0,128), rgba(56, 2, 155, 0.54));
+    border-image-slice: 1;
+    width: 100%;
+}
+
+.navbar > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: arial;
+    color: var(--textColor);
+}
+
+.navbar > a:nth-child(1) {
+    background: var(--orangeC);
+    width: 7%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.navbar > a:nth-child(1):hover {
+    background: var(--orangeCH);
+    color: white;
+}
+
+.navbar > a:hover {
+    color: white;
+    font-weight: bolder;
+}
